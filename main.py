@@ -37,9 +37,6 @@ def rgb(red, green, blue, string):
     """获取RGB颜色"""
     return f'\x1b[38;2;{red};{green};{blue}m{string}'
 
-def GetgrayscalePicture(image):
-    """获取灰度图"""
-    return image.convert('L')
 
 def run():
     while 1:
