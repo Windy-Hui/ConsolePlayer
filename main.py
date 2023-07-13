@@ -34,7 +34,7 @@ def ConsoleClear():
     c.ConsoleClear()
 
 def rgb(red, green, blue, string):
-    """获取RGB颜色"""
+    """获取RGB颜色并返回相应颜色的字符"""
     return f'\x1b[38;2;{red};{green};{blue}m{string}'
 
 
