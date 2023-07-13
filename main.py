@@ -19,12 +19,6 @@ def GetConsoleXY():
     """获取控制台尺寸"""
     return (os.get_terminal_size().columns // 2, os.get_terminal_size().lines) 
 
-# def GetScreenShotByTitle(title : str):
-#     """根据窗口标题截图"""
-#     window = pygetwindow.getWindowsWithTitle(title)[0]
-#     left,top,width,height = window.left,window.top,window.width,window.height
-#     return ImageGrab.grab(bbox=(left, top, left+width, top+height))
-
 def GetScreenShotFullWindow():
     """全屏截图"""
     return ImageGrab.grab()
